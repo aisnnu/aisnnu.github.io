@@ -135,7 +135,7 @@
 <meta property="og:image" content="https://www.aisnnu.com/aisnnu.github.io/uncategorized/aisnnu3/39.png">
 <meta property="og:image" content="https://www.aisnnu.com/aisnnu.github.io/uncategorized/aisnnu3/40.png">
 <meta property="og:image" content="https://www.aisnnu.com/aisnnu.github.io/uncategorized/aisnnu3/41.png">
-<meta property="og:updated_time" content="2019-01-07T01:42:18.322Z">
+<meta property="og:updated_time" content="2019-01-11T06:53:31.633Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="后渗透攻击_如何取得一台服务器的控制权限">
 <meta name="twitter:description" content="渗透测试就是一种通过模拟恶意攻击者的技术和方法，挫败目标系统安全控制措施，取得访问控制权，并发现具备业务影响后果安全隐患的一种安全测试与评估方法。">
@@ -430,7 +430,7 @@
 <p>白盒测试中发现和解决安全漏洞所需花费的时间和代价要比黑盒测试少许多。</p>
 <p>白盒测试无法有效地测试客户组织的应急响应措施，也无法判断出他们的安全防护计划对检测特定攻击的效率。</p>
 <h1 id="渗透测试方法论-PTES"><a href="#渗透测试方法论-PTES" class="headerlink" title="渗透测试方法论-PTES"></a>渗透测试方法论-PTES</h1><p>PTES 渗透测试执行标准是由安全业界多家领军企业技术专家所共同发起的，期望为企业组织与安全服务提供商设计并制定用来实施渗透测试的通用准则。</p>
-<p>PTES 标准项目网站为[<a href="http://www.pentest-standard.org]。" target="_blank" rel="noopener">http://www.pentest-standard.org]。</a></p>
+<p>PTES 标准项目网站为<code>http://www.pentest-standard.org</code></p>
 <p>PTES 标准中定义的渗透测试过程环节基本上反映了安全业界的普遍认同，具体包括以下7个阶段。</p>
 <h2 id="前期交互阶段（Pre-Engagement-Interaction）"><a href="#前期交互阶段（Pre-Engagement-Interaction）" class="headerlink" title="前期交互阶段（Pre-Engagement Interaction）"></a>前期交互阶段（Pre-Engagement Interaction）</h2><p>在前期交互阶段，渗透测试团队与客户组织进行交互讨论，最重要的是确定渗透测试的范围、目标、限制条件以及服务合同细节。</p>
 <p>该阶段通常涉及收集客户需求、准备测试计划、定义测试范围与边界、定义业务目标、项目管理与规划等活动。</p>
@@ -447,7 +447,7 @@
 <p>后渗透攻击的目标和途径是千变万化的。</p>
 <h2 id="报告阶段（Reporting）"><a href="#报告阶段（Reporting）" class="headerlink" title="报告阶段（Reporting）"></a>报告阶段（Reporting）</h2><p>渗透测试过程最终需要向客户提交，取得认可并成功获得合同付款就是一份渗透测试报告。</p>
 <p>这份报告凝聚了之前所有阶段之中渗透测试团队所获取的管家你情报信息、探测和发掘出的系统安全漏洞、成功渗透攻击的过程，以及造成业务影响后果的攻击途径，同时还要站在防御者的角度上，帮助他们分析安全防御体系中的薄弱环节、存在的问题以及修补与升级方案。</p>
-<h1 id="实战：后渗透攻击"><a href="#实战：后渗透攻击" class="headerlink" title="实战：后渗透攻击"></a>实战：后渗透攻击</h1><h2 id="目标网站"><a href="#目标网站" class="headerlink" title="目标网站"></a>目标网站</h2><p>使用浏览器打开测试站点[<a href="http://www.test.com]" target="_blank" rel="noopener">http://www.test.com]</a></p>
+<h1 id="实战：后渗透攻击"><a href="#实战：后渗透攻击" class="headerlink" title="实战：后渗透攻击"></a>实战：后渗透攻击</h1><h2 id="目标网站"><a href="#目标网站" class="headerlink" title="目标网站"></a>目标网站</h2><p>使用浏览器打开测试站点<code>http://www.test.com</code></p>
 <p><img src="/aisnnu.github.io/uncategorized/aisnnu3/1.png" alt=""></p>
 <h2 id="信息搜集"><a href="#信息搜集" class="headerlink" title="信息搜集"></a>信息搜集</h2><h3 id="IP-收集"><a href="#IP-收集" class="headerlink" title="IP 收集"></a>IP 收集</h3><p>使用ping 命令初步判定ip 地址为10.10.10.201，但是显示请求超时，目标网站可能有防火墙设置。</p>
 <p><img src="/aisnnu.github.io/uncategorized/aisnnu3/2.png" alt=""></p>
@@ -457,7 +457,7 @@
 <p><img src="/aisnnu.github.io/uncategorized/aisnnu3/4.png" alt=""></p>
 <h3 id="漏洞分析与利用"><a href="#漏洞分析与利用" class="headerlink" title="漏洞分析与利用"></a>漏洞分析与利用</h3><p>metinfov5.0.4 存在文件上传漏洞，可以直接使用提前写好的脚本GetShell。</p>
 <p><img src="/aisnnu.github.io/uncategorized/aisnnu3/5.png" alt=""></p>
-<p>Shell 地址为[<a href="http://www.test.com/upload/file/1544783891.php]。输入密码[admin]，即可进入大马。" target="_blank" rel="noopener">http://www.test.com/upload/file/1544783891.php]。输入密码[admin]，即可进入大马。</a></p>
+<p>Shell 地址为<code>http://www.test.com/upload/file/1544783891.php</code>  输入密码[admin]，即可进入大马。</p>
 <p><img src="/aisnnu.github.io/uncategorized/aisnnu3/6.png" alt=""></p>
 <h2 id="后渗透"><a href="#后渗透" class="headerlink" title="后渗透"></a>后渗透</h2><p>后渗透就是就是扩大渗透攻击的深度与广度。其中涉及到目标系统重要资产发现，权限提升，维持访问等等操作。</p>
 <h3 id="查看开放的端口"><a href="#查看开放的端口" class="headerlink" title="查看开放的端口"></a>查看开放的端口</h3><p>发现Web 服务器上开放的端口如下</p>
@@ -496,7 +496,7 @@
 <h3 id="抓取明文密码"><a href="#抓取明文密码" class="headerlink" title="抓取明文密码"></a>抓取明文密码</h3><p>导入神器load mimikatz</p>
 <p>导出密码 <code>kerberos</code></p>
 <p><img src="/aisnnu.github.io/uncategorized/aisnnu3/21.png" alt=""></p>
-<p>我们可以导出目标服务器的用户名和密码[Administrator/<a href="http://123.com]" target="_blank" rel="noopener">http://123.com]</a></p>
+<p>我们可以导出目标服务器的用户名和密码<code>Administrator/http://123.com</code></p>
 <h3 id="远程桌面与截屏"><a href="#远程桌面与截屏" class="headerlink" title="远程桌面与截屏"></a>远程桌面与截屏</h3><p><code>run vnc</code></p>
 <p>直接登录目标服务器。</p>
 <p><img src="/aisnnu.github.io/uncategorized/aisnnu3/22.png" alt=""></p>
